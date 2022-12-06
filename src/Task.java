@@ -71,10 +71,7 @@ public abstract class Task {
         return dayCreation;
     }
 
-    public void setDayCreation(LocalDateTime dayCreation) throws EmptyStringValueException{
-        if (repeat == null) {
-            throw new EmptyStringValueException("Не заполнено поле с датой.");
-        }
+    public void setDayCreation(LocalDateTime dayCreation){
         this.dayCreation = dayCreation;
     }
 
